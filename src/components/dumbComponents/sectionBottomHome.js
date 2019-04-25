@@ -22,6 +22,7 @@ class SectionBottomHome extends React.Component {
          <h1 className='text-center p-5'>Déja <span className='text-success'>20</span> millions de matchs !</h1>
                <div className='embed-responsive embed-responsive-16by9 w-50 mx-auto rounded-pill' >
                   <Youtube
+                  className='embed-responsive-item'
                   videoId='zdef2anpd04'
                   opts={opts}
                   onReady={this._onReady}

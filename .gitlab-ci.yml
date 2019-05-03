@@ -1,0 +1,14 @@
+image: node:10-alpine
+
+cache:
+        paths:
+        - node_modules/
+        - .yarn  
+
+before_script:
+        - apt-get update  && apt-get install
+
+pages :
+        script:
+        - yarn install
+        - parcel index.html

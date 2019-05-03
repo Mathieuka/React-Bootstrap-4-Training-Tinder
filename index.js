@@ -1,28 +1,28 @@
 // index.js
 import React from 'react';
 import { render } from 'react-dom';
-import Header from './src/components/container/header';
-import Section from './src/components/container/section';
-import Footer from './src/components/container/footer';
 
+// components
+import HeaderHome from './src/components/dumbComponents/headerHome';
+import FooterHome from './src/components/dumbComponents/footerHome';
+import SectionTopHome from './src/components/dumbComponents/sectionTopHome';
+import SectionBottomHome from './src/components/dumbComponents/sectionBottomHome';
 
-class App extends React.Component{
-
+class Index extends React.Component{
     render(){
         return(
-            <div >
-                <Header/>
-            <div className="container">
-                <Section/>
-            </div>
-                <Footer/>
-            </div>
+           <div>
+                <HeaderHome/>
+                <SectionTopHome/>
+                <SectionBottomHome/>
+                <FooterHome/>
+           </div>
         )
     }
 }
 
 render(
-      <App/>,
+      <Index/>,
       document.getElementById('root')
   )
   
